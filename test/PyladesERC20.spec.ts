@@ -25,6 +25,7 @@ describe('PyladesERC20', () => {
   let token: Contract
   beforeEach(async () => {
     token = await deployContract(wallet, ERC20, [TOTAL_SUPPLY])
+    return true;
   })
 
   it('name, symbol, decimals, totalSupply, balanceOf, DOMAIN_SEPARATOR, PERMIT_TYPEHASH', async () => {

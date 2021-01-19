@@ -29,6 +29,7 @@ describe('PyladesFactory', () => {
   beforeEach(async () => {
     const fixture = await loadFixture(factoryFixture)
     factory = fixture.factory
+    return true;
   })
 
   it('feeTo, feeToSetter, allPairsLength', async () => {

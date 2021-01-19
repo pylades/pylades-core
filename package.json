@@ -1,18 +1,17 @@
 {
-  "name": "@pylades/core",
+  "name": "@pyladesprotocol/core",
   "description": "🎛 Core contracts for the Pylades protocol",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://pylades.finance",
+  "author": "Andreas Bigger",
   "repository": {
     "type": "git",
     "url": "https://github.com/pylades/pylades-core"
   },
   "keywords": [
-    "uniswap",
+    "pylades",
     "ethereum",
-    "v2",
-    "core",
-    "uniswap-v2"
+    "core"
   ],
   "files": [
     "contracts",
@@ -42,7 +41,7 @@
     "compile": "waffle .waffle.json",
     "pretest": "yarn compile",
     "test": "mocha",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn compile"
   },
   "license": "GPL-3.0-or-later"
 }
